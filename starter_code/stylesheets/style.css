@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
+
+
 /*
 background purple: #540B51
 background ivory: #F3EAE2
@@ -8,3 +11,293 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+html{
+    font-size:19px;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Roboto";
+}
+/* A continuación, los estilos de todos los HEADERS que aparecen a lo largo de la página */
+
+/* H.E. D.E. T.O.R.N.A.R. .A. .F.E.R.H.O. .A.M.B. .S.E.L.E.C.T.O.R.S. .A.V.A.N.Ç.A.T.S. */
+
+
+h1{
+    text-align: center;
+    margin:0 5%;
+    font-size: 2rem;
+}
+h2, h3, p{
+    text-align: center;
+    padding: 2.5%
+}
+h2{
+    font-size: 1.2rem;
+}
+.equivalenteh2{font-size: 1.8rem}
+
+h3{
+    font-size: 1rem; 
+}
+p{
+    font-size: 0.8rem;
+}
+li{
+    list-style-type: none;
+}
+
+/* A continuación, algunos elementos recurrentes en la página */
+
+.smallIcon{
+       background-color: #540B51;
+       border-width: 0ch;
+    }
+.midSizeLogo{
+    height: 3vh;
+}
+.bigSizeLogo{
+    max-height: 10vw;
+}
+.whiteButton{
+    height: 10vw;
+    font-weight: bolder;
+    font-size: 0.7rem;
+    padding: 1vh 20vw;
+    align-content: center;
+    border-radius: 4px;
+}
+.blueButtonSection{
+    position:relative;
+    align-items:center;
+
+}
+.blueButton{
+    background-color: #4285F4;
+    height: 10vw;
+    font-weight: bolder;
+    font-size: 0.7rem;
+    padding: 1vh 20vw;
+    align-content: center;
+    border-radius: 4px;  
+    width:100%;
+}
+#googleLogo{
+    background-color: white;
+    position: absolute;
+    left: 10px;
+    height: 80%;
+    align-items:center;
+    margin-top:1%;
+}
+
+.purpleButton{
+    height: 10vw;
+    font-weight: bolder;
+    font-size: 0.7rem;
+    padding: 1vh 15vw;
+    align-content: center;
+    border-radius: 4px;
+    background-color:  #540B51;
+    color: white;
+}
+button{
+    font-size: 1rem;
+}
+
+.largeImage{
+    width:90vw;
+}
+.boldLetters{
+    font-weight: bold;
+}
+em{
+    color: #ECB12F;
+    font-style: normal;
+}
+
+/* El resto de la web, la hemos dividido en secciones, pudiendo así ordenar los elementos de css relacionados con las mismas */
+
+/* NAV section */
+        #nav{
+            background-color: #540B51;
+            color:white;
+            display: flex;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 6vw;
+            border-bottom: 1px solid rgba(100,100,100,0.2);
+            justify-content:space-between;
+            align-items: center;
+          
+        }
+        .nav-left, .nav-right, {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+        } 
+        
+        .menu{
+            display: none;
+        }
+  
+        .nav-left img{width:40%; height:100%}
+     
+        .nav-right ul{
+            display:none;
+        }
+
+        .addpadding{
+            padding: 1rem 8vw 1rem;;
+        }
+        
+/* HEADER section */
+        #header{
+            background-color: #540B51;
+            color:white;
+            display: flex;
+            justify-content: space-around;
+            padding: 1rem 5vw 5rem;;
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: auto;
+            object-fit: contain
+                }
+        #header div p{
+            padding:40px 0;
+        }
+        .middleButtons{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 5%;
+
+        }
+
+
+/* MAIN section */
+        #mainSection{
+            background-color: #F3EAE2;
+            color:black;
+            padding-top:5%;
+            align-items: flex-start;
+        }
+        #mainSection section{
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 5%;
+        }
+        #logoswrap{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: 40vh;
+            align-items: flex-start;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        #logoswrap img{
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        .bluecolor{
+            color: #2E71A6;
+            display:flex;
+            justify-content:start;
+            font-size:0.8rem;
+            padding-left:20px;
+        }
+
+/* TEAMS section */
+        #teamsSection{
+            display: flex;
+            flex-direction: column;
+        }
+        #teamsSection .whiteButton{ 
+            color:  #540B51;
+            border-color:  #540B51;
+        }
+        span {
+            color: #540B51;
+            font-weight:bolder;
+        }
+
+
+        
+        
+/* WELCOME section */
+        #welcomeSection{
+            background-color: #540B51;
+            color:white;
+            padding-bottom: 5%;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        #welcomeSection button{
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+/* FOOTER section */
+        #footerSection{
+            padding: 10% 5%;
+        }
+        .leftLogo{
+            height: 7vh;
+            justify-content:start;
+            padding-left: 5%;
+
+        }
+
+        #footerheader{
+            display: flex;
+            flex-direction: row;
+            align-items: left;
+            width:80%;
+            padding: 5% 10%;
+        }
+        #footerheader ul {
+            padding-left: 2%;
+            padding-right:2%;
+        }
+        #footerheader ul li{
+            padding: 5% 2%;
+            font-size:0.6rem;
+        }
+        #footermenu{
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            font-weight: bold;
+            padding: 1rem 5vw 5rem;;
+
+        }
+        #footermenu li{
+            padding: 3% 0;
+        }
+        #iconsfooter {
+            display: flex;
+            flex-direction: row;
+            padding: 10% 5%;
+            justify-content:space-between;
+        }
+
+        .addbottompadding{
+            padding-bottom:10%;
+            
+        }
+
+        .#trusted{
+            font-size:10px;
+        }
+
+        .addmargins{
+            margin-left:auto;
+            margin-right:auto;
+        }

@@ -11,196 +11,194 @@
 
   <!-- link your styles -->
   <link rel="stylesheet" href="./stylesheets/style.css" />
-
+  <link rel="stylesheet" href="./stylesheets/style768.css" />
+  <link rel="stylesheet" href="./stylesheets/style1024.css" />
   <link rel="icon" type="image/x-icon" href="./images/slack-icon.png">
   <title>Slack is your digital HQ | Slack</title>
 </head>
 
 <body>
-  <nav>
-    <div>
-      <img src="./images/slack-logo.png" alt="Slack logo" />
+  <nav id="nav">
+      <div class="nav-left">
+        <img src="./images/slack-logo.png" alt="Slack logo" class="midSizeLogo" />
 
-      <ul>
-        <li>
-          <a href="#">Product</a>
-        </li>
-        <li>
-          <a href="#">Solutions</a>
-        </li>
-        <li>
-          <a href="#">Resources</a>
-        </li>
-        <li>
-          <a href="#">Pricing</a>
-        </li>
-      </ul>
-    </div>
+        <ul class="menu">
+            <li>               <a href="#">Product</a>             </li>
+            <li>               <a href="#">Solutions</a>             </li>
+            <li>               <a href="#">Resources</a>            </li>
+            <li>               <a href="#">Pricing</a>             </li>
+        </ul>
+      </div>
 
-    <div>
-      <button>
-        <img src="./images/icon-search.png" alt="Search icon">
-      </button>
+      <div class="nav-right">
+          <button class="smallIcon">
+            <img src="./images/icon-search.png" alt="Search icon" >
+          </button>
 
-      <button>
-        <img src="./images/icon-menu.png" alt="Menu icon">
-      </button>
+          <button class="smallIcon ">
+            <img src="./images/icon-menu.png" alt="Menu icon" class="smallIcon hidden">
+          </button>
 
-      <ul hidden>
-        <li>
-          <a href="#">Sign in</a>
-        </li>
-        <li>
-          <a href="#">Try for free</a>
-        </li>
-      </ul>
-    </div>
+          <ul >
+              <li>
+                <a href="#" id="signinbutton">Sign in</a>
+              </li>
+              <li>
+                <a href="#" id="tryfreeinbutton">Try for free</a>
+              </li>
+          </ul>
+      </div>
   </nav>
-
-  <header>
-    <div>
+ 
+  <header id="header">
+    <div id="leftHeader">
       <h1>Great teamwork starts with a digital HQ</h1>
 
-      <p>Slack is free to try for as long as you'd like.</p>
+      <p><em class="boldLetters">Slack is free to try</em> for as long as you'd like.</p>
 
-      <div>
-        <button>Sign up with email</button>
+      <div class="middleButtons">
+          <button class="whiteButton">SIGN UP WITH EMAIL</button>
 
-        <button>
-          <img src="./images/logo-google.png" alt="Google logo" />
-          <span>Sign up with Google</span>
-        </button>
+        <section class=blueButtonSection>
+          <button class="blueButton">
+            <span>SIGN UP WITH GOOGLE</span>
+          </button>
+          <img src="./images/logo-google.png" alt="Google logo" class="midSizeLogo" id="googleLogo"/>
+        </section>
+
       </div>
-
     </div>
 
-    <div>
-      <img src="./images/hero-product-ui.png" alt="Slack app screenshot" />
-    </div>
+
+    <img src="./images/hero-product-ui.png" alt="Slack app screenshot" class="largeImage" />
   </header>
+  
 
   <main>
-    <section>
-      <p>Trusted by companies all over the world</p>
+      <section id="mainSection">       <! -- esta sección la he añadido yo -->      
+        <section>
+          <p class="boldLetters addbottompadding" id="trusted">TRUSTED BY COMPANIES ALL OVER THE WORLD</p>
 
-      <div>
-        <img src="./images/logo-airbnb.png" alt="Airbnb logo" />
-        <img src="./images/logo-nasa.png" alt="NASA logo" />
-        <img src="./images/logo-uber.png" alt="Uber logo" />
-        <img src="./images/logo-target.png" alt="Target logo" />
-        <img src="./images/logo-nyt.png" alt="New York Times logo" />
-        <img src="./images/logo-spotify.png" alt="Spotify logo" />
-      </div>
+          <div id="logoswrap">
+            <img src="./images/logo-airbnb.png" alt="Airbnb logo" class="bigSizeLogo"/>
+            <img src="./images/logo-nasa.png" alt="NASA logo" class="bigSizeLogo"/>
+            <img src="./images/logo-uber.png" alt="Uber logo" class="bigSizeLogo"/>
+            <img src="./images/logo-target.png" alt="Target logo" class="bigSizeLogo"/>
+            <img src="./images/logo-nyt.png" alt="New York Times logo" class="bigSizeLogo"/>
+            <img src="./images/logo-spotify.png" alt="Spotify logo" class="bigSizeLogo"/>
+          </div>
 
+        </section>
+
+        <section class="twoColumns">
+          <div>
+            <img src="./images/connectedness-mobile.png" alt="connectedness" class="largeImage"/>
+          </div>
+
+          <div class="addpadding">
+            <h2>Bring your team together</h2>
+
+            <p>
+              At the heart of Slack are channels: organized spaces for everyone and everything you need for work. In
+              channels, it's easier to connect across departments, offices, time zones and even other companies.
+            </p>
+
+            <a href="#">
+              <span class="bluecolor">Learn more about channels</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="twoColumns">
+              <div class="addpadding">
+                <h2>Choose how you want to work</h2>
+                <p>
+                  In Slack, you’ve got all the flexibility to work when, where and how it’s best for you. You can easily chat,
+                  send
+                  audio and video clips, or hop on a huddle to talk things out live.
+                </p>
+
+              <a href="#">
+                <span class="bluecolor">Learn more about flexible communication</span>
+              </a>
+            </div>
+
+            <div class="rightposition">
+              <img src="./images/flexibility-mobile.png" alt="flexibility" class="largeImage "/>
+            </div>
+        </section>
+
+        <section class="twoColumns">
+            <div>
+              <img src="./images/speed-mobile.png" alt="speed" class="largeImage"/>
+            </div>
+
+            <div class="addpadding">
+              <h2>Move faster with your tools in one place</h2>
+              <p>
+                With your other work apps connected to Slack, you can work faster by switching tabs less. And with powerful
+                tools like Workflow Builder, you can automate away routine tasks.
+              </p>
+
+              <a href="#">
+                <span class="bluecolor">Learn more about the Slack platform</span>
+              </a>
+            </div>
+        </section>
+      </section> 
+   
+  
+
+    <section id="teamsSection" class="addpadding">                              <!--esta sección la he añadido yo /     -->
+        <h3>Teams large and small rely on Slack</h3>
+        <p>Slack securely scales up to support collaboration at the world’s biggest companies.</p>
+  
+        <div class="middleButtons">
+          <button class="purpleButton">MEET SLACKFOR ENTERPRISE</button>
+          <button class="whiteButton">TALK TO SALES</button>
+        </div>
+  
+        <ul>
+          <li>
+            <p><span class="equivalenteh2">85%</span></p>
+            <p>
+              of users say Slack has improved communication
+              <sup>*</sup>
+            </p>
+          </li>
+  
+          <li>
+            <p><span class="equivalenteh2">86%</span></p>
+            <p>
+              feel their ability to work remotely has improved has improved
+              <sup>*</sup>
+            </p>
+          </li>
+  
+          <li>
+            <p><span class="equivalenteh2">88%</span></p>
+            <p>
+              feel more connected to their teams*
+              <sup>*</sup>
+            </p>
+          </li>
+        </ul>
     </section>
-
-    <section>
-      <div>
-        <img src="./images/connectedness-mobile.png" alt="connectedness" />
-      </div>
-
-      <div>
-        <h2>Bring your team together</h2>
-
-        <p>
-          At the heart of Slack are channels: organized spaces for everyone and everything you need for work. In
-          channels, it's easier to connect across departments, offices, time zones and even other companies.
-        </p>
-
-        <a href="#">
-          <span>Learn more about channels</span>
-        </a>
-      </div>
-    </section>
-
-    <section>
-      <div>
-        <h2>Choose how you want to work</h2>
-        <p>
-          In Slack, you’ve got all the flexibility to work when, where and how it’s best for you. You can easily chat,
-          send
-          audio and video clips, or hop on a huddle to talk things out live.
-        </p>
-
-        <a href="#">
-          <span>Learn more about flexible communication</span>
-        </a>
-      </div>
-
-      <div>
-        <img src="./images/flexibility-mobile.png" alt="flexibility" />
-      </div>
-    </section>
-
-    <section>
-      <div>
-        <img src="./images/speed-mobile.png" alt="speed" />
-      </div>
-
-      <div>
-        <h2>Move faster with your tools in one place</h2>
-        <p>
-          With your other work apps connected to Slack, you can work faster by switching tabs less. And with powerful
-          tools like Workflow Builder, you can automate away routine tasks.
-        </p>
-
-        <a href="#">
-          <span>Learn more about the Slack platform</span>
-        </a>
-      </div>
-    </section>
-
-
-    <section>
-      <h3>Teams large and small rely on Slack</h3>
-      <p>Slack securely scales up to support collaboration at the world’s biggest companies.</p>
-
-      <div>
-        <button>Meet Slack for enterprise</button>
-        <button>Talk to sales</button>
-      </div>
-
-      <ul>
-        <li>
-          <p><span>85%</span></p>
-          <p>
-            of users say Slack has improved communication
-            <sup>*</sup>
-          </p>
-        </li>
-
-        <li>
-          <p><span>86%</span></p>
-          <p>
-            feel their ability to work remotely has improved has improved
-            <sup>*</sup>
-          </p>
-        </li>
-
-        <li>
-          <p><span>88%</span></p>
-          <p>
-            feel more connected to their teams*
-            <sup>*</sup>
-          </p>
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h3>Welcome to your new digital HQ</h3>
-
-      <button>Try for free</button>
-      <button>Talk to sales</button>
+    
+    <section id="welcomeSection">
+      <h3 id="welcomeh3">Welcome to your new digital HQ</h3>
+      
+      <button class="purpleButton">TRY FOR FREE</button>
+      <button class="whiteButton">TALK TO SALES</button>
     </section>
 
   </main>
 
-  <footer>
-    <img src="./images/iso-slack.png" alt="Slack logo" />
-    <div>
+  <footer id="footerSection">
+    <img src="./images/iso-slack.png" alt="Slack logo" class="leftLogo"/>
+    <div id="footerheader">
       <ul>
-        <li>WHY SLACK?</li>
+        <li class="boldLetters">WHY SLACK?</li>
         <li>Slack vs. Email</li>
         <li>Channels</li>
         <li>Engagement</li>
@@ -209,7 +207,7 @@
       </ul>
 
       <ul>
-        <li>PRODUCT</li>
+        <li class="boldLetters">PRODUCT</li>
         <li>Features</li>
         <li>Integrations</li>
         <li>Enterprise</li>
@@ -218,13 +216,13 @@
       </ul>
 
       <ul>
-        <li>PRICING</li>
+        <li class="boldLetters">PRICING</li>
         <li>Plans</li>
         <li>Paid vs. Free</li>
       </ul>
 
       <ul>
-        <li>COMPANY</li>
+        <li class="boldLetters">COMPANY</li>
         <li>About Us</li>
         <li>Leadership</li>
         <li>Investor Relations</li>
@@ -235,7 +233,9 @@
     </div>
 
 
-    <ul>
+    <hr>
+    
+    <ul id="footermenu">
       <li>Status</li>
       <li>Privacy</li>
       <li>Terms</li>
@@ -245,9 +245,7 @@
       <li>Download Slack</li>
     </ul>
 
-    <hr>
-
-    <ul>
+    <ul id="iconsfooter">
       <li>
         <i class="fab fa-twitter"></i>
       </li>
@@ -255,7 +253,7 @@
         <i class="fab fa-facebook"></i>
       </li>
       <li>
-        <i class="fab fa-youtube"></i>
+        <i class="fab fa-youtube "></i>
       </li>
       <li>
         <i class="fab fa-linkedin"></i>
